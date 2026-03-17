@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback | Good Health and Well-Being</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Global.css">
+</head>
+<body>
+   <header class="topbar">
+        <img src= "images/logo.png" alt= "Logo" class= "logo">
+		<h1>GOOD HEALTH AND WELL-BEING</h1>
+        <nav class="nav-links">
+            <a href="home.html" class="button">Home</a>
+            <a href="volunteer.html" class="button">Volunteer</a>
+            <a href="table.html" class="button">Table</a>
+            <a href="profile.html" class="button">Profile</a>
+            <a href="feedback.html" class="button">Feedback</a>
+            <a href="team.html" class="button">Team</a>
+            <a href="sitemap.html" class="button">Sitemap</a>
+        </nav>
+    </header>
+
+  <main class="feedback-page">
+    <br><br>
+    <h1>Feedback Form</h1>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required title="Please enter a valid email address.">
+
+        <label for="phone">Telephone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter 10-digit phone number.">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback Details</legend>
+        <label for="comment">Your Message:</label>
+        <textarea id="comment" name="comment" maxlength="500" placeholder="Write your comment here..." required></textarea>
+
+        <label for="health-topic">Choose Health Area:</label>
+        <select id="health-topic" name="topic">
+          <option value="mental">Mental Health</option>
+          <option value="nutrition">Nutrition</option>
+          <option value="fitness">Physical Activity</option>
+          <option value="prevention">Preventative Care</option>
+        </select>
+        <br><br>
+
+        <label>Topics You Are Interested In:</label><br>
+        <div class="checkbox-group">
+          <label class="checkbox-row">
+            <input type="checkbox"> Well-Being
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox"> Volunteering
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox"> Awareness Events
+          </label>
+        </div>
+        <br><br>
+
+        <label for="platform">How did you hear about us?</label><br>
+        <input list="platforms" id="platform" name="platform">
+        <datalist id="platforms">
+          <option value="Facebook">
+          <option value="Instagram">
+          <option value="University">
+          <option value="Friend">
+        </datalist>
+        <br><br>
+
+        <p><strong>Rate Us:</strong></p>
+        <div class="rating">
+          <label><input type="radio" name="rate" value="1"> <img src="images/1-rating.png" alt="unsatisfied face emoji"></label>
+          <label><input type="radio" name="rate" value="2"> <img src="images/2-rating.png" alt="neutral face emoji"></label>
+          <label><input type="radio" name="rate" value="3"> <img src="images/3-rating.png" alt="somewhat satisfied face emoji"></label>
+          <label><input type="radio" name="rate" value="4"> <img src="images/4-rating.png" alt="satisfied face emoji"></label>
+          <label><input type="radio" name="rate" value="5"> <img src="images/5-rating.png" alt="highly satisfied face emoji"></label>
+        </div>
+
+        <label for="date">Date-to-contact:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="attachment">Upload Attachment/s (PDF or Image):</label>
+        <input type="file" id="attachment" name="attachment" accept=".pdf,.png,.jpg">
+      </fieldset>
+
+      <button type="submit">Submit Feedback</button>
+      <button type="reset" class="cancel">Reset</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 <b>United Nations.</b> All Rights Reserved. Designed by Group-06</p>
+    <a href="pageEditor_ST3.html">Student 3</a>
+  </footer>
+</body>
+</html>

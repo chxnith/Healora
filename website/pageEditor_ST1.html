@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Chanith Samarasinghe</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+	<link rel="stylesheet" href="Global.css">
+	
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header class="topbar">
+        <img src= "images/logo.png" alt= "Logo" class= "logo">
+		<h2>GOOD HEALTH AND WELL-BEING</h2>
+        <nav class="nav-links">
+            <a href="home.html" class="button">home</a>
+            <a href="volunteer.html" class="button">volunteer</a>
+            <a href="table.html" class="button">table</a>
+            <a href="profile.html" class="button">profile</a>
+            <a href="feedback.html" class="button">feedback</a>
+            <a href="team.html" class="button">team</a>
+            <a href="sitemap.html" class="button">sitemap</a>
+        </nav>
+    </header>
+
+    <section class="stud">
+        <h2>Student name: Chanith Samarasinghe, student role 1</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">Splash Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The HTML and the CSS codes creates a visually engaging splashing screen designed to display the group topic along with the team details before redirecting the user to the main webpage. An animation is also added which gives a loading effect for 4s. The HTML structure begins with the <#!DOCTYPE html> declaration and the <#html lang="en"> tag which sets the document type to HTML and the laguage to english. The <#head> section includes essential metadata such as <#meta charset="UTF-8"> for character encoding and a <#meta http-equiv="refresh"> tag which automatically redirects the user to the home page after 4 seconds. A link to an external CSS file is aslo added to apply the styling across the page.</p> 
+						
+						<p>In the <#body> section the inline style sets a full screen background image using the background-image and background-size: cover properties to make sure the image fits to the screen. The content is wrapped in a div that centers the text and the logo using text-align: center and applies a font via font-family. Key elements such as <#img>, <#h1>, <#h2> and <#h4> are used to display the logo, title, mission and team member names structured in a clear and hierarchial manner.</p>
+						
+						<p>The .logo class is used to define the logo size and the spacing by using the height and margin-top tags. The .loading class styles the spinner using the width, height and border properties. A rotating effect is achieved through the @keyframes spin animation, which continously rotates the element using the 360-degree transform. This spinner gives a loading effect to the splashing page.</p>
+						
+                    
+                    <h3>Accessibility</h3>
+                        <p>Accessibilty in this splashing screen has been considered through several basic techniques that enhances the user experience. The <#html lang="en"> tag helps the screen readers interpret and vocalize the content in english. The use of alt tag allows viusally impaired users to understand the purpose of the image tag through screen reader description. The structure of the content in the splashinf screen is organized using semantic headings from h1 to h4 which improves the readability of the page. Black text on the background image aims to maintain contrast for visual clarity.</p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST1.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The volunteer page demonstrates a solid front end design. The implementation of this page effectively uses the HTML and CSS to create a well structured, responsive and a visually engaging layout.</p> 
+						
+						<p>The semantic tags used in the HTML such as <#header>, <#nav>, <#h2> and <#footer> are used to define the structure and improve the accessability. The content section is divided into different sections such as volunteer cards, reviews and a feedback form, each of which is clearly seperated using <#div> containers. Each volunteer program is placed within a .card div containing an image, heading, information and a button linked with the actual volunteer programs fo fuuther information. Images use the alt attribute to enhance the accessibility. Interactive form elements such as a <#select> dropdown for sorting and a group of radio buttons for the emojis in the feedback section improve the user friendly nature of the webpage.</p>
+						
+						<p>The CSS linked to the HTML is designed, enhances the responsiveness and interactive design patterns. The .card-container uses CSS grid via grid-template-columns to organize the cards into 4 columns ensuring the scalability and alignment. The gap and the padding properties creates a visual spacing between the elements. The .card class includes the properties like box-shadow and hover effects usinf transform: translateY() to make the user interface more dynamic. The .card-image uses object-fit: cover to fit the image to the given space. Buttons such as .volunteer-button and .cancel-button are designed with colours matching the website theme along with the hover effect. Form section is made with elements like textarea with a fixed height. Radio buttons are added to the emoji rating section to give a more user friendly experience for the users.</p>
+						
+
+                    <h3>Accessibility</h3>
+                        <p>Accessibility in this volunteer program web page has been carefully considered through various HTML and CSS techniques. These aim to make the content more user-friendly for people</p>
+
+						<p>Using semantic HTML tags like <#header>, <#nav>, <#footer> and proper heading levels like <#h2>, <#h3>, <#h4> helps screen readers better understand the page’s structure. The <#nav> tag marks the navigation area allowing quick access to page links. All the images include alt attributes that explain their content which is essential for visually impaired users. This ensures the images provide meaningful information when read. Form controls like <#label> elements are correctly linked with their corresponding inputs such as the "Sort by" dropdown and emoji radio buttons.</p>
+
+						<p>In visual design, text contrast is kept strong with dark text with light backgrounds to improve the readability for users with visual impairments. Buttons and links are easy to see and have hover effects that give feedback to users.</p>
+
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST1.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The implementation of the Preventive Health & Lifestyle Habits page uses HTML and CSS to create a well structured and user friendly layout. The HTML provides a semantic structure while the CSS focuses on the layout, styling and interactivity.</p>
+						
+						<p>In the HTML the <#header> tag is used to contain the site's top navigation bar which is also included on the main pages along with the logo and a side navigation panel. This includes a <#nav> element along with multiple <#a> tags to create a horizontal side navigation bar. Headings are used such as <#h1>, <#h2>, <#h3> to improve the readability and allows the screen readers to navigate through the page easily. <#ul> and <#ol> tags are used to structure the lists.</p>
+						
+						<p>The .sidebar-nav is placed on the left side using the position: fixed, to make sure the users see the navigation topics consistently. The upward arrow placed in the bottom right using the position: fixed allows quick navigation back to the top of the content page.</p>
+
+                    <h3>Accessibility</h3>
+                        <p>HTML elements such as <#header>, <#nav>, <#footer>, <#h1> to <#h3>, <#p> and lists such as <#ul> and <#ol> are used to structure the content neatly. These elements help screen readers identify the roles of each section.</p>
+						
+						<p>Alternative text (alt) attribut are used for all the images so that the screen readers can show the significance of the images to the users who cannot see them. The upward arrow button in the bottom corner helps the users to quickly return to the top of the page.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST1.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>When adding images inside the cards they were distorted in the containers. The object-fit: cover was applied to the .card-image to ensure the images maintain aspect ratio while filling the container properly. Fixed width and height were set.</p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>The web pages created follows with the janet regulations. They serve a non commercial, educational purpose with no monetization or advertising. I used proper heading structures and descriptive alt texts to support basic accessibility. The styling ensures readability and clear navigation while external links point to reputable sources.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>W3schools (2025) <i>CSS Transitions.</i> Available at: <a href="#">https://www.w3schools.com/css/css3_transitions.asp</a> (Last accessed: 20 Jun 2025).</li>
+                        <li>W3schools (2025) <i>CSS @keyframes Rule.</i> Available at: <a href="#">https://www.w3schools.com/cssref/atrule_keyframes.php</a> (Last accessed: 25 Jun 2025).</li>
+						<li>Freepik (2025) <i>Health.</i> Available at: <a href="#">https://www.freepik.com/search?format=search&last_filter=query&last_value=health&query=health</a> (Last accessed: 14 Jun 2025).</li>
+					</ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash page</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+               
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 <b>United Nations.</b> All Rights Reserved. Designed by Group-06</p>
+        <a href="pageEditor_ST1.html"  >Student 1</a>
+    </footer>
+</body>
+</html>

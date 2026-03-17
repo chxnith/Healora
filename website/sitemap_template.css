@@ -1,0 +1,236 @@
+.sitemap-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sitemap-title {
+    text-align: center;
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.sitemap-svg {
+    width: 100%; 
+    background: white;
+    height: min-content;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; padding-bottom: 0;
+    margin-bottom: -300px; /* Reduce gap below SVG */
+}
+       /* SVG node styles */
+        .node {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .node:hover .node-bg {
+            fill: #0f9b0f;
+            stroke: white;
+            stroke-width: 3;
+        }
+        
+        .node:focus .node-bg {
+            fill: #0f9b0f;
+            stroke: white;
+            stroke-width: 3;
+            outline: 2px solid #0984e3;
+        }
+        
+        .node-bg {
+            fill: rgb(3, 57, 138);
+            stroke: white;
+            stroke-width: 2;
+            rx: 8;
+            ry: 8;
+        }
+        .home-node .node-bg {
+            fill: white;
+            stroke: rgb(3, 57, 138);
+        }
+        
+        .home-node:hover .node-bg {
+            fill: rgb(2, 102, 105);
+            stroke: white !important;
+        }
+        
+        .home-node:hover .node-text {
+            fill: white !important;
+        }
+        
+        .content-node .node-bg {
+            fill: #0f9b0f;
+            stroke: white;
+        }
+        
+        .content-node:hover .node-bg {
+            fill: black;
+            fill: rgb(2, 102, 105);
+            stroke: black;
+        }
+        .editor-node .node-bg {
+            fill: rgb(2, 102, 105);
+            stroke: white;
+        }
+        
+        .editor-node:hover .node-bg {
+            fill: white;
+            fill: black;
+            stroke: #0f9b0f;
+        }
+        .external-node .node-bg{
+             fill: black;
+            stroke: #0f9b0f;
+        }
+        
+        .node-text {
+            fill: white;
+            font-size: 12px;
+            font-weight: 600;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            pointer-events: none;
+        }
+        
+        .node-text2 {
+            fill: black;
+        }
+        
+        .connecting-line {
+            stroke: rgb(204, 5, 5);
+            stroke-width: 2;
+            fill: none;
+        }        
+
+/* Section2 - Side by side layout */
+.section2 { 
+    background-color:white;
+    display: flex; 
+    padding-top: 0; margin-bottom: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px; /* Fixed the typo: was 5pxpx */
+    margin-top: -10px; /* Pull section2 up closer to SVG */
+}
+
+.legend {
+    flex: 1;
+    min-width: 200px;
+}
+
+.sitemap-image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.sitemap-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sitemap-title {
+        font-size: 2em;
+    }
+    
+    .sitemap-container {
+        padding: 15px;
+    }
+    
+    .section2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .sitemap-image {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sitemap-title {
+        font-size: 1.5em;
+    }
+   
+    .sitemap-container {
+        padding: 10px;
+    }
+
+    .legend {
+        font-size: 0.9em;
+        min-width: unset;
+    }
+
+    .sitemap-image {
+        max-width: 200px;
+    }
+
+    .sitemap-svg {
+        margin-bottom: -100px;
+    }
+
+    .node-text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sitemap-title {
+        font-size: 2.2em;
+    }
+
+    .legend {
+        min-width: 180px;
+    }
+
+    .sitemap-svg {
+        margin-bottom: -200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sitemap-title {
+        font-size: 2em;
+    }
+
+    .sitemap-container {
+        padding: 15px;
+    }
+
+    .section2 {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 0;
+    }
+
+    .legend {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .sitemap-image-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sitemap-image {
+        max-width: 250px;
+    }
+
+    .sitemap-svg {
+        margin-bottom: -150px;
+    }
+}
+
+

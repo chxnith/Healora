@@ -1,0 +1,25 @@
+table{
+    margin: auto;
+    border-collapse: collapse;
+    padding: 20px;
+    box-shadow:0 4px 8px rgb(119, 119, 196);
+    border-radius: 10px;
+}
+
+thead{
+    background-color: #2d89ef;
+}
+
+td,th{
+    border-collapse: collapse;
+    margin: auto;
+    padding: 20px;
+}
+
+tbody tr:hover  {
+    background-color: #e0ebf5;
+    transition: background-color 0.3s;
+}
+tr{
+    box-shadow: 0 3px 1px rgb(227, 227, 231);
+}

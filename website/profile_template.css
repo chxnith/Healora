@@ -1,0 +1,663 @@
+
+       .container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* space between cards */
+    flex-wrap: wrap; /* allows stacking on smaller screens */
+    padding: 50px;
+}
+
+
+        .profile-card {
+            background-color: rgb(207, 207, 207) !important;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 40vw; 
+            width: 40%;  top:0;
+            justify-content: center; min-height: max-content !important;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+        }
+
+           .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 25px; height: 40vh;
+            transition: transform 0.3s ease,
+            box-shadow 0.3s ease;
+            min-height: 50vh;
+        }
+
+        .wide-card {
+            grid-column: span 2;
+            width: 100vw; min-height: 20vh; padding: 0;
+            left: 0; margin: 0;position: relative;
+        }
+       
+        .avatar {
+            width: 150px;
+            height:150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin: 0 auto 20px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .user-name {
+            font-size: 28px;
+            font-weight: bold;
+            color:black;
+            margin-bottom: 8px;
+            position: center;
+            z-index: 2;
+        }
+
+        .user-role {
+            font-size: 16px;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+       
+        .quote {
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+           
+        }
+
+        .user-details {
+            display: grid; margin-left: 35%; text-align: left;
+            grid-template-columns:auto;
+            gap: 5px;
+            margin-bottom: 30px;
+           
+        }
+        .skills {
+            background: rgb(230, 230, 230);
+            min-height: max-content; width: 60%; margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            padding: 5px 0 5px 0;
+        }
+
+        .skills-section {
+            background-color:rgb(3, 57, 138) !important;
+            padding-top: 20px;
+        }
+
+        .skills-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(3, 57, 138);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .skill-item {
+            margin-bottom: 20px;
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .skill-name {
+            font-weight: 600;
+            color: rgb(3, 57, 138) ;
+            font-size: 14px;
+        }
+
+        .skill-percentage {
+            font-size: 12px;
+            color:rgb(3, 57, 138) !important;
+            font-weight: bold;
+        }
+
+        .skill-bar { margin: auto;
+            background:grey;
+            height: 6px; width: 50%; 
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background:#3ed602;
+            border-radius: 3px;
+            position: relative;
+        }
+
+        .skill-progress.communication { width: 85%; }
+        .skill-progress.teamwork { width: 90%; }
+        .skill-progress.ui { width: 75%; }
+        .skill-progress.presentation { width: 80%; }
+
+.main-content { left: 100px;
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap: 20px; height: fit-content;
+             width:50% ;
+        } 
+              
+ .section-card {
+            grid-column: span 1;
+        }        
+    
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-left: 5px;
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: #e4e4e4;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 15px;
+            font-size: 16px;
+        }
+
+        .section-title {border: 5px; left: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(3, 57, 138) !important;
+        } 
+p {padding: 20px; font-size: 0.8em; font-style: italic; 
+    text-indent: left;}  
+    
+ .goals-list, .frustrations-list {
+            list-style: none; text-align: left;
+        }
+
+        .goals-list li, .frustrations-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .goals-list li:before {
+            content: '🎯';
+            position: absolute;
+            left: 0;
+        }
+
+        .frustrations-list li:before {
+            content: '😤';
+            position: absolute;
+            left: 0;
+        }
+.main-content2{
+    display: grid;
+    gap: 1;
+}
+ /* UN Goals */
+       .un-goals {
+    margin: 0; 
+    background: rgb(79, 162, 15); 
+    color: white; border: 0;
+    position: relative;
+   /* Optional: for a smoother look */
+}
+      .goals-grid {   justify-content: center; 
+        padding-left: 3.5em; 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+.header-style {
+    background-color: white;
+     border: solid 0.5px rgb(3, 122, 138);  border-radius: 15px;
+}
+
+.wide-card { padding-bottom:20px;
+    grid-column: span 2; height: min-content;
+}
+        .goal-item {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 10px;  width: 10em;
+            text-align: center;
+            transition: transform 0.3s ease, background 0.3s ease;
+            cursor: pointer;
+        }
+
+        .goal-item:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .goal-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .goal-text {
+            font-size: 12px;
+            font-weight: 500;
+        }
+.card2{
+    margin:0;  width: 40%; height: max-content;
+;
+} 
+#selected-date {
+    background-color:white; padding: 10px; border-radius: 5px; border: #0f9b0f solid 1px;
+}
+
+
+.slot-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+}
+
+.slot-table th, .slot-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.slot-cell {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: #f8f8ff;
+  padding: 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+.select-time {
+    padding: 20px;
+}
+.slot-table{ padding: 5px; border-radius: 5px;
+    width: 14em;
+}
+.slot-cell:hover {
+  background: #0f9b0f;
+  color: white;
+}
+
+.slot-cell input[type="radio"] {
+  display: none; /* hide the actual radio */
+}
+
+.slot-cell input[type="radio"]:checked + span {
+  background:#0f9b0f;
+  color: white;
+  display: inline-block;
+ 
+  border-radius: 4px;
+}
+      /* Contact Form */
+.form-group { padding: 5px;
+  text-align: left;
+}      
+.form-label {
+  font-size: 16px;
+  padding: 10px 0;
+  margin: 10px;
+  text-align: left;
+}
+
+.form-input { background-color:white;  width: 50em;
+  font-size: 14px;  border-radius: 5px;
+  margin: auto; border:white solid 5px;
+}
+.form-textarea { background-color:white;  width: 50em;
+  font-size: 14px;border-radius: 5px;
+  margin: auto; border:white solid 5px;
+}
+
+.btn {
+  font-size: 13px; background: rgb(79, 162, 15); color:white; padding: 10px; margin: 7px; border-radius: 5px; width: 80px;
+}
+
+.section-title {
+  font-size: 20px;
+}
+ 
+
+
+        /* Experience Section */
+        .experience-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid rgb(3, 57, 138);
+        }
+
+        .experience-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .experience-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+.slot-container { top: 10px; padding-top: 16px;
+     padding-bottom: 0;
+            max-width: 400px;
+            margin: 5 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        
+    
+        .slot-list {
+            padding: 10px;
+        }
+        
+        .slot-item { 
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 3px;
+            border: 1px solid #0f9b0f;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: white;
+        }
+        
+        .slot-item:hover {
+            border-color: #0f9b0f;
+            background: white;
+            transform: translateY(-1px);
+        }
+         
+        .slot-item:has(.slot-radio:checked) {
+            border-color: rgb(3, 57, 138);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+      
+        .slot-time {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-right: 16px;
+            min-width: 60px;
+        }
+        
+        .slot-status {
+            flex: 1;
+            font-size: 14px;
+            color: #64748b;
+            font-weight: 500;
+        }
+        
+     
+        
+        .slot-item:last-child {
+            margin-bottom: 0;
+        }
+/* 🔁 For tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .profile-card,
+  .card2 {
+    width: 80%;
+    max-width: 90vw;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+    width: 90%;
+    left: 0;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 90%;
+  }
+
+  .goals-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 1em;
+  }
+
+  .slot-table {
+    width: 100%;
+  }
+}
+
+/* 📱 For mobile devices */
+@media (max-width: 768px) {
+  .container {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .profile-card,
+  .card2,
+  .skills {
+    width: 95%;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .goals-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+  }
+
+  .goal-item {
+    width: 100%;
+  }
+
+  .user-details {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .slot-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+.card2 {
+    width: 95% !important;
+    margin: 15px auto;
+  }
+
+  .form-label {
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100% !important;
+    font-size: 13px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .slot-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .slot-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  .slot-time {
+    font-size: 15px;
+  }
+
+  .slot-status {
+    font-size: 12px;
+  }
+}  
+
+
+/* 📱 For very small screens */
+@media (max-width: 480px) {
+  .section-title,
+  .user-name {
+    font-size: 18px;
+  }
+
+  .skill-name,
+  .skill-percentage {
+    font-size: 12px;
+  }
+
+  .goal-text {
+    font-size: 11px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+  }
+
+  .skills-title {
+    font-size: 18px;
+  }
+
+  .experience-description {
+    font-size: 13px;
+  }
+
+.section-title {
+    font-size: 18px;
+  }
+
+  .form-label {
+    font-size: 13px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .slot-time {
+    font-size: 14px;
+  }
+
+  .slot-status {
+    font-size: 11px;
+  }
+
+  .slot-item {
+    padding: 6px;
+  }
+
+  .experience-title {
+    font-size: 16px;
+  }
+
+  .experience-description {
+    font-size: 13px;
+  }
+}  
+
+/* Tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .card2 {
+    width: 80% !important;
+    margin: 20px auto;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 90% !important;
+    font-size: 14px;
+  }
+
+  .slot-container {
+    max-width: 90%;
+  }
+
+  .slot-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .slot-time {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .slot-status {
+    font-size: 13px;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - I.H. Poornima</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="Global.css">
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header class="topbar">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>GOOD HEALTH AND WELL-BEING</h1>
+        <nav class="nav-links">
+            <a href="home.html" class="button">Home</a>
+            <a href="volunteer.html" class="button">Volunteer</a>
+            <a href="table.html" class="button">Table</a>
+            <a href="profile.html" class="button">Profile</a>
+            <a href="feedback.html" class="button">Feedback</a>
+            <a href="team.html" class="button">Team</a>
+            <a href="sitemap.html" class="button">Sitemap</a>
+        </nav>
+    </header>
+    <section class="stud">
+        <h2>Hasara Poornima, Student 4</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="profile">Profile Page</h2>
+                    <h3>Technical Description</h3> 
+                    <h4>Semantic HTML </h4> 
+                    <ol>
+                        <li>Used semantic HTML elements like &lt;header&gt;,
+     &lt;nav&gt;, and &lt;footer&gt;for structure, maintained proper heading
+      hierarchy with &lt;h2&gt; and &lt;h3&gt;, and organized grouped 
+      items using &lt;ul&gt; and &lt;li&gt;.</li>
+      <li>Screen Reader Support : Used <code>alt</code> text for images and combined 
+    emojis with text labels for clarity.</li>
+<li>Keyboard Navigation : Ensured keyboard accessibility and used proper &lt;label&gt;associations for form inputs.</li>
+<li>Visual Clarity : Used good color contrast, clear section headers, and progress bars with visual and
+     textual indicators.</li> 
+<li>Accessible Forms :Included labels, appropriate <code>required</code> attributes,
+     and correct input types for all form fields.</li>
+<li>Responsive & Consistent : Responsive design ensures compatibility across screen sizes, 
+    with consistent navigation throughout the site.</li>
+<li>Date Picker- Uses native &lt;input type="date" &gt; for accessibility </li>  </ol>          
+<br>
+This ensures usability for screen reader users, keyboard navigation, and those with visual or cognitive disabilities..<br>
+<br>
+                    <p>This profile page uses a combination of semantic HTML and modern CSS techniques
+                             to create a responsive, visually appealing layout.</p>
+                    <br> 
+                       
+<h4>HTML Structure:</h4> 
+<ol>
+    <li>Semantic Layout:The page has a header with navigation,
+         a main section with card content, and a footer with copyright and a link.</li>
+<li>Card-Based Design:
+   Multiple &lt;div class="card"&gt; sections organize content into modular containers, including the profile card, bio section, goals, and contact form.
+</li>
+<li>Form Elements:A &lt;form&gt; uses properly associated &lt;label&gt; elements with input types like &lt;date&gt;,
+         &lt;radio&gt;, and &lt;text&gt;, each with appropriate attributes.</li></ol>
+
+<h4>CSS Techniques:</h4>
+<ol>
+    <li>1. Flexbox and Grid:The layout combines Flexbox and Grid, with .container using 
+        display: flex and flex-wrap for responsiveness, .main-content using grid-template-columns 
+        for a 2-column layout, and .goals-grid implementing a 5-column grid for UN goals.</li>
+<li>Responsive Design:
+    <ul>
+        <li>Media queries at 1024px, 768px, and 480px breakpoints</li>
+        <li>Mobile-first approach with progressive enhancement</li>
+        <li>flex-direction: column` adjustment on smaller screens</li>
+    </ul>
+
+</li>
+<li>3.Visual Styling:CSS uses variables for consistent colors, 'box-shadow' and
+     'border-radius' for card styling, and 'transition' effects for interactive hover states.</li>
+<li> 4.Skill Bars:
+   Skill progress bars are built with nested &lt;div&gt; elements, where each bar’s width is controlled by a
+    CSS class like .communication { width: 85%; }.</li>
+<li>5.Form Styling:
+   Radio buttons are styled using the :checked pseudo-class, 
+   with consistent spacing achieved through rem-based padding and margins.</li>
+</ol>
+
+
+<h4>Key Design Choices</h4>
+<ol>
+     <li>Color Scheme:
+   The design uses blue (rgb(3, 57, 138)) for primary elements, green (#0f9b0f) for
+    accents and interactive elements, and white cards with subtle shadows for a clean appearance.</li> 
+    <li>Typography:
+  Text is styled with relative sizing using em/rem for scalability and font-weight
+   contrast (e.g., bold titles vs regular body) to establish visual hierarchy.</li> 
+    <li>Mobile Optimization:
+   The responsive design features a stacked layout on small screens, 
+   tap-friendly sizing for form elements, and simplified grids with 2 or 1 column using mobile-friendly CSS.</li>
+</ol><br>
+   
+
+The page combines functional form elements with an engaging visual presentation, using modern CSS to create a responsive profile that works across devices while maintaining visual consistency. The semantic HTML structure ensures 
+accessibility and proper document outlining.</p> 
+                    
+                    <h3>Accessibility</h3>
+                        <p>This profile page implements strong accessibility practices through semantic HTML 
+                            and ARIA-friendly styling: <ol>
+                                 <li>Semantic structure:with clear headings (&lt;h2&gt;, &lt;h3&gt;) and logical document flow </li> 
+                            <li>Form accessibility: 
+                                <ul>
+                                <li>Proper &lt;label&gt; associations using <code>for,id</code> pairing </li>
+                                <li>Input fields with explicit <code>type</code> (date, email, etc.) and <code>required</code> attributes</li> 
+                                <li>Radio buttons styled accessibly with visible focus states</li>
+                                </ul>
+                                </li>
+                                <li>Color contrast: meets WCAG standards (dark blue/white, green/white) </li> 
+                                <li>Keyboard navigability: ensured via focusable interactive elements (links, form controls) </li> 
+                                <li>Responsive design: prevents content clipping on small screens </li> 
+                                <li>Text alternatives: for icons (emoji paired with visible labels) </li> 
+                                <li>ARIA implicit roles: from semantic tags (e.g. &lt;nav&gt;, &lt;form&gt;) </li> 
+                            </ol>   
+                            <br>
+
+The CSS enhances accessibility by maintaining readable text sizes,sufficient spacing, and
+clear visual feedback for 
+interactions without relying solely on color. </p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the profile page -->
+                        <p><a href="validation_ST4.html#profileVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="profile.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="sitemap">Sitemap</h2>
+                    <h3>Technical Description</h3>
+                        <p><h4>HTML Structure and Key Tags</h4>
+                            <ol>
+                                  <ol>1.Semantic Structure:
+                                <ul>
+                                    <li>&lt;svg&gt;: Used to create the interactive sitemap diagram with connecting lines
+                                     between nodes.</ul>
+                                    <li>&lt;g&gt;: SVG group elements to organize related nodes and paths.</ul>
+                                    <li>&lt;path&gt;: SVG elements that draw the connecting lines between sitemap nodes.</ul><ul>
+                                    &lt;rect&gt; and &lt;text&gt;: SVG elements that create the boxes and labels for each node.</ul></ul></ol> 
+                                    <li>Purposeful Grouping:The SVG diagram is divided into three main sections:
+                                        <ol>
+                                          
+                                            <li>Main navigation pages(directly linked from Home)</li>
+                                            <li>Content pages(secondary pages linked from Home)</li>
+                                            <li>Editor pages(tertiary pages linked from Home)</li></ol>
+                                        </ol>
+
+                                    <h4>CSS Styling Techniques</h4>
+                                    <ol>
+                                         <li>Layout and Positioning:
+                                            <ul>
+                                                <li>Flexbox/Grid: Used implicitly through the container divs for responsive layout</li> 
+                                                <li>SVG viewBox: <code>viewBox="0 0 1200 900</code> ensures the diagram scales properly.</li>
+                                                <li>Absolute positioning: For precise placement of SVG elements.</li>
+                                            </ul>
+                                
+                                         </li>
+
+                            <li>2.Visual Design Elements:Color-coded nodes: Different fill colors distinguish between
+                                 page types:<ul>
+                                    <li>White for Home (root node)</li>
+                                    <li>Blue for main navigation</li> 
+                                    <li>Green for content pages</li>
+                                    <li>Black for external links</li>
+                                    <li>Connecting lines: Dashed and solid lines show relationships between pages</li>
+                                    <li>Legend: Explains the color coding system for better user understanding</li>
+                                    </ul>
+                                 </li>    
+                            </ol>
+                          
+                           
+
+
+<h4>Functional Justifications</h4>
+<ol>
+    1.SVG Diagram:
+    <ul>Chosen over traditional HTML/CSS for its ability to create complex connecting lines</ul>
+    <ul>Scalable without loss of quality</ul>
+    <ul>Programmatically generated paths ensure precise connections</ul></ol>
+<ol>2.Color Coding:
+    <ul>Provides immediate visual categorization of page types</ul>
+    <ul>Matched with legend for clarity</ul>
+    <ul>High contrast for accessibility</ul></ol>
+<ol>3.Responsive Design:
+    <ul>SVG viewBox allows scaling to different screen sizes</ul>
+    <ul>Container divs adjust to content flow</ul>
+    <ul>Text sizes adapt to maintain readability</ul></ol>
+    <br>
+
+The combination of SVG for the diagram and semantic HTML/CSS for the surrounding content creates 
+an effective visual representation of the website's 
+structure while maintaining accessibility and responsive design principles.</p> 
+
+                    <h3>Accessibility</h3>
+                        <p>
+                        <ol>
+                                <li>1.Visual Accessibility: 
+                                    <ul>
+                                        <li> Color-coded nodes with explanatory legend </li>
+                                        <li> High contrast design </li>
+                                        <li>Scalable SVG maintains clarity when zoomed</li>
+                                    </ul></li>
+                            <li>Structural Clarity: 
+                                <ul>
+                                    <li>Clear hierarchy (Home → Main nav → Content pages)</li>
+                                    <li>Consistent node design with uniform information layout </li>
+                                    <li>Connecting lines show relationships</li>
+                                </ul>
+                                </li>
+                            <li>Technical Accessibility:
+                                <ul>
+                                    <li>Text remains selectable/readable in SVG </li>
+                                    <li>Responsive design works at any size</li>
+                                    <li>Logical left-to-right, top-to-bottom flow</li>
+                                </ul>
+                                  </li>
+                            <li>Cognitive Support: 
+                                <ul>
+                                     <li>Multiple visual cues (color + position + text)</li>
+                                     <li>Progressive disclosure of information </li>
+                                     <li> External links visually distinct</li>
+                                     </ul> </li>
+                        </ol>
+                      
+<br>
+
+This creates an accessible experience for screen reader users, those with low vision, 
+and users with cognitive differences through clear 
+visual communication and logical structure.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the sitemap -->
+                        <p><a href="validation_ST4.html#sitemapVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="sitemap.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>This page uses semantic HTML tags like <#header>, <#h1>, and <#nav> to organize content clearly and improve accessibility.
+                           The main content is wrapped in a .card-container div to create a focused, card-style layout.
+                           CSS styles set a clean font, comfortable line spacing, and a soft background for easy reading.
+                           The container is centered with a max width and padding for balanced spacing.
+                           Box shadows and rounded corners give a subtle 3D effect to the content area.
+                           Images are made responsive with width: 100% to adapt to different screen sizes.
+                           Proper margins and padding keep the layout neat and readable
+                           These HTML and CSS choices ensure the page is user-friendly, visually appealing, and accessible across devices.
+                        </p> 
+
+                    <h3>Accessibility</h3>
+                        <p>In this content page, accessibility was carefully considered to ensure that all users, including those with disabilities, can access and understand the information.
+                           Meaningful alternative text was added to all images to support screen readers.
+                           The page structure uses clear and logical headings (<#h1>, <#h2>, <#h3>) to help users navigate the content easily.
+                           Navigation links are descriptive and organized for keyboard users, allowing easy tabbing through the menu and sidebar.
+                           The color contrast between text and background is sufficient for readability, and the font size is clear and legible.
+                           Additionally, the layout is responsive so that content remains accessible and easy to read on different screen sizes, supporting a wide range of devices and users.
+                           Overall, these efforts enhance usability and inclusivity on the page.
+                        </p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST4.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST4.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>While developing this web page, I faced numerous challenges, particularly related to layout alignment and unexpected bugs that affected the visual presentation and functionality across different screen sizes.
+                       These issues often disrupted the overall structure of the page, requiring extensive debugging and adjustments.
+                       To resolve them, I had to conduct a significant amount of research, experiment with different techniques, and carefully analyze the code.
+                       This process helped me deepen my understanding of responsive web design, especially in terms of using CSS properties such as flexbox, positioning, and media queries effectively.
+                    </p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>The pages I have created aim to be compliant with JANET regulations by following key web standards related to accessibility, usability, and responsible content publishing.
+                       I ensured that the HTML and CSS were validated using official tools (such as the W3C Validator), and applied semantic HTML structure with clear headings, labels, and ARIA-friendly tags where necessary.
+                       Accessibility has been addressed by providing descriptive alt text for images, keyboard-navigable structures, and responsive layouts that adapt to various screen sizes and assistive technologies.
+                       I also avoided the inclusion of any offensive, copyrighted, or commercial content, in line with JANET’s acceptable use policies.
+                       While the project was educational, I took care to ensure that the content was respectful, accurate, and safe for public viewing—thus aligning with JANET's principles for ethical and responsible web publication.
+                    </p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    </p><ul class="ref">
+                        <li>W3Schools (2025) HTML5 Semantic Elements. Available at: https://www.w3schools.com/html/html5_semantic_elements.asp (Last accessed: 11 Feb 2025).</li>
+                        <li>W3Schools (2025) HTML5 SVG. Available at: https://www.w3schools.com/html/html5_svg.asp (Last accessed: 11 Feb 2025).</li>
+                        <li>MDN Web Docs (2025) HTML section element. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section (Last accessed: 11 Feb 2025).</li>
+                        <li>GeeksforGeeks (2025) HTML <#section> Tag. Available at: https://www.geeksforgeeks.org/html/html-section-tag/ (Last accessed: 11 Feb 2025).</li>
+</li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="pageEditor_ST4.html#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#profile">Profile page </a></li>
+                        <li><a href="#sitemap">Sitemap page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 <b>United Nations.</b> All Rights Reserved. Designed by Group-06</p>
+        <a href="pageEditor_ST4.html">Student 4</a>
+    </footer>
+
+
+</body></html>

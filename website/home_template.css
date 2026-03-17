@@ -1,0 +1,156 @@
+.topbar {
+
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    right: 0.25px;
+}
+
+
+
+
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    margin-top: 180px;
+
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    padding: 1.2rem;
+    border: 1px solid #c0bfbf75;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card-image {
+    width: 70%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.content-button {
+    background-color:#0f9b0f;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-button:hover {
+    background-color: #006600;
+    transform: translateY(-2px);
+}
+
+.redirect-button {
+      background-color: rgb(0, 196, 196);
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+}
+
+.redirect-button:hover {
+      background-color: rgb(2, 102, 105);
+	    transform: translateY(-2px);
+      color: rgb(255, 255, 255);
+}
+	
+.right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px;
+  gap: 20px;
+}
+
+.text-column {
+  max-width: 60%;
+}
+
+.side-image {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.bottom-panel {
+  position: relative;
+  top:90px;
+  
+  background-color: rgb(78, 88, 146);         /* or light grey */
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 20px;
+  text-align: center;
+  filter: drop-shadow(6px 10px 6px rgb(3, 0, 0, 0.3));
+    
+    
+    
+    
+}
+
+
+
+
+.Bp-logo {
+
+    width: 110px;
+    height: auto;
+    position: relative;
+    right: 340px;
+    top: 80px;
+    filter: drop-shadow(6px 10px 6px rgb(0, 0, 0, 0.6));
+
+}
+
+.bottom-panel h4 {
+    display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    filter: drop-shadow(6px 10px 6px rgb(0, 0, 0, 0.6));
+    position: absolute;
+    left: 69px;
+    top:14rem;
+}
+
+.bottom-panel table {
+    width:400px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 5px;
+    position: relative;
+    left: 500px;
+    bottom:40px;
+    border-color: black;
+   
+}
+
+.bottom-panel table a {
+    color: whitesmoke
+    
+}
+
+
+	
