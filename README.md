@@ -1,2 +1,2 @@
-<h1> Healora </h1>h1>
+<h1> Healora </h1>
 Our platform is dedicated to promoting healthy lifestyles by providing educational resources on nutrition, fitness, mental health, and preventive care. Whether you're looking to improve your eating habits, stay physically active, support your mental well-being, or learn ways to prevent disease through healthy lifestyle choices, our website offers easy-to-understand information to help you make informed decisions. We believe that awareness is the first step toward better health, empowering individuals to live healthier, happier, and more balanced lives
