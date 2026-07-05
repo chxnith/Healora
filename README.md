@@ -10,3 +10,6 @@ HTML5 – Used to create the structure and content of the website.
 CSS3 – Used to design the layout, styling, colors, animations, and responsive user interface.
 
 This project demonstrates the use of HTML and CSS to build a visually appealing, responsive, and informative health awareness website.
+
+
+Year 1 project at IIT
